@@ -41,7 +41,7 @@ p{
   text-transform: capitalize;
 }
 .back-img{
-
+  background-image: url('https://static.dribbble.com/users/192276/screenshots/2500960/attachments/491748/midnightinthevalley-2560x1440.png');
   height:500px;
   z-index: 2;
   margin-top: -10;
