@@ -2,7 +2,18 @@ import React from "react";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
-import { FormControl,InputLabel,Input,FormHelperText  } from "@material-ui/core";
+import { SendRounded } from "@material-ui/icons";
+import { IconButton } from "@material-ui/core";
+import { Telegram,Instagram,Facebook,GitHub,Linkedin } from "@material-ui/icons";
+import {
+  FormControl,
+  InputLabel,
+  Input,
+  FormHelperText,
+  OutlinedInput,
+  InputAdornment,
+  Button
+} from "@material-ui/core";
 import Navbar from "../navbar";
 import Card from "../cards";
 import ImgCard from "../imgcard/imgcard";
@@ -30,22 +41,102 @@ class Contact extends React.Component {
         </div>
         <div />
 
-        <div className="pt-5 pb-5 pl-2 pr-2">
-          <div className="row ">
-            <div className="col-lg-6 col-md-6">
-              <FormControl>
-                <InputLabel htmlFor="my-input">Email address</InputLabel>
-                <Input id="my-input" aria-describedby="my-helper-text" />
-                
-              </FormControl>
-            </div>
-            <div className="col-lg-6 col-md-6 p-" />
+        <div className="p-5 ">
+          <h1 className="heading">We'd love to hear from you!</h1>
+          <div className="row p-2 ">
+            <form id="query">
+              <div className="col-lg-6 col-md-6 col-sm-12">
+                <FormControl fullWidth className="mb-2">
+                  <InputLabel htmlFor="my-input">Name</InputLabel>
+                  <Input required="true" name="Name" />
+                </FormControl>
+                <FormControl fullWidth className="mb-2">
+                  <InputLabel htmlFor="my-input">Email address</InputLabel>
+                  <Input required="true" type="email" name="Email" />
+                </FormControl>
+                <FormControl fullWidth className="mb-2">
+                  <InputLabel htmlFor="my-input">Contact Number</InputLabel>
+                  <Input required="true" name="ContactNum" />
+                </FormControl>
+              </div>
+              <div className="col-lg-6 col-md-6 col-sm-12 pt-3">
+                <div className="form-group">
+                  <label for="exampleFormControlTextarea1">
+                    Your requirement
+                  </label>
+                  <textarea
+                    className="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="5"
+                    name="Requirement"
+                    placeholder="Enter Your Requirement"
+                  />
+                  <br />
+                  <Button
+                    variant="contained"
+                    style={{ backgroundColor: "orange" }}
+                    fullWidth
+                  >
+                    Send Query <SendRounded />
+                  </Button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
-        <div className="pt-5 pb-5 pl-2 pr-2">
-          <div className="row ">
-            <div className="col-lg-6 col-md-6" />
-            <div className="col-lg-6 col-md-6 p-" />
+        <div className="p-4" style={{ backgroundColor: "#f3f3f3" }}>
+          <div className="p-4 bg-white text-center">
+            <h2 class="heading  pt-5 pb-5">
+              Contact us on Social Media
+            </h2>
+            <div className="row mb-5">
+            <div className="col-2">
+
+              <IconButton className="p-1"
+                style={{ backgroundColor: "rgb(19 146 222)", color: "white" }}
+              >
+                <Telegram />
+              </IconButton>
+              </div>
+               <div className="col-2">
+
+              <IconButton className="p-1"
+                style={{ background: "linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)", color: "white" }}
+              >
+                <Instagram />
+              </IconButton>
+              </div> <div className="col-2">
+
+              <IconButton className="p-1"
+                style={{ backgroundColor:"rgb(19 146 222)", color: "white" }}
+              >
+                <Facebook />
+              </IconButton>
+              </div> <div className="col-2">
+
+              <IconButton className="p-1"
+                style={{ backgroundColor: "black", color: "white" }}
+              >
+                <GitHub />
+              </IconButton>
+              </div>
+              <div className="col-2">
+
+              <IconButton className="p-1"
+                style={{ backgroundColor: "black", color: "white" }}
+              >
+                <Linkedin />
+              </IconButton>
+              </div>
+              <div className="col-2">
+
+              <IconButton className="p-1"
+                style={{ backgroundColor: "black", color: "white" }}
+              >
+                <GitHub />
+              </IconButton>
+              </div>
+            </div>
           </div>
         </div>
         <Footer />
