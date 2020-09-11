@@ -68,7 +68,7 @@ class Home extends React.Component {
     console.log(this.props);
     return (
       <div>
-        <div className="back-img">
+        <div className="back-img" style={{backgroundImage: "url('https://static.dribbble.com/users/192276/screenshots/2500960/attachments/491748/midnightinthevalley-2560x1440.png')"}}>
           <Navbar />
           <div className="p-2 text-light float-left heading">Albokotech</div>
           <div

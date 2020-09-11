@@ -21,6 +21,18 @@
          font-weight: 500;
         
      }
+   .navbaar li:before {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background:rgb(90, 227, 231);
+    transform:  scaleX(0);
+  }
+ .navbaar li:hover:before {
+    transform:  scaleX(1);
+  }
+  
 
 .float-right{
     float: right;
