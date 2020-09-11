@@ -2,7 +2,7 @@ import React from "react";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
-import { FormControl } from "@material-ui/core";
+import { FormControl,InputLabel,Input,FormHelperText  } from "@material-ui/core";
 import Navbar from "../navbar";
 import Card from "../cards";
 import ImgCard from "../imgcard/imgcard";
@@ -36,9 +36,7 @@ class Contact extends React.Component {
               <FormControl>
                 <InputLabel htmlFor="my-input">Email address</InputLabel>
                 <Input id="my-input" aria-describedby="my-helper-text" />
-                <FormHelperText id="my-helper-text">
-                  We'll never share your email.
-                </FormHelperText>
+                
               </FormControl>
             </div>
             <div className="col-lg-6 col-md-6 p-" />
