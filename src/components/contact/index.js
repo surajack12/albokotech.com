@@ -4,7 +4,7 @@ import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
 import { SendRounded } from "@material-ui/icons";
 import { IconButton } from "@material-ui/core";
-import { Telegram,Instagram,Facebook,GitHub,Linkedin } from "@material-ui/icons";
+import { Telegram,Instagram,Facebook,GitHub,LinkedIn ,YouTube} from "@material-ui/icons";
 import {
   FormControl,
   InputLabel,
@@ -87,7 +87,7 @@ class Contact extends React.Component {
         <div className="p-4" style={{ backgroundColor: "#f3f3f3" }}>
           <div className="p-4 bg-white text-center">
             <h2 class="heading  pt-5 pb-5">
-              Contact us on Social Media
+              Contact us on 
             </h2>
             <div className="row mb-5">
             <div className="col-2">
@@ -123,17 +123,17 @@ class Contact extends React.Component {
               <div className="col-2">
 
               <IconButton className="p-1"
-                style={{ backgroundColor: "black", color: "white" }}
+                style={{ backgroundColor: "rgb(19 146 222)", color: "white" }}
               >
-                <Linkedin />
+              <LinkedIn />
               </IconButton>
               </div>
               <div className="col-2">
 
               <IconButton className="p-1"
-                style={{ backgroundColor: "black", color: "white" }}
+                style={{ backgroundColor: "red", color: "white" }}
               >
-                <GitHub />
+                <YouTube />
               </IconButton>
               </div>
             </div>
