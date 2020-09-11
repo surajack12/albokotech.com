@@ -2,22 +2,23 @@
      .navbaar li{
          list-style: none;
          display: inline-block;
-         padding: 1rem;    
+         padding: .7rem;    
           border-bottom: 0;
          margin-left: 1rem;       
          color:white;
-         transition: color , border-bottom, 1s;
+         transition: color,background-color , border-bottom, 1s ease-in-out;
          font-weight: 500;
+         border-radius: .6rem;
          font-size: 18px
      }
      .navbaar li:hover{
          list-style: none;
          display: inline-block;
-         padding-bottom: 2rem;        
-         
+         padding-bottom: 1.2rem;        
+         background-color: rgb(221, 218, 218);
          margin-left: 1rem;       
          color:rgb(90, 227, 231);
-        
+         border-radius: .6rem;
          font-weight: 500;
         
      }
