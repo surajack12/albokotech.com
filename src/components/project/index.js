@@ -10,14 +10,16 @@ class Project extends React.Component{
     super(props)
     this.state={
       data:[
-        {link:"http://cloud.sistec.ac.in/suraj/mangolib",title:"Mangolib ",about:"Completely free pdf online library",imglink:""},
-        {link:"http://cloud.sistec.ac.in/suraj/mangolib",title:"Mangolib ",about:"Completely free pdf online library",imglink:""},
-        {link:"http://cloud.sistec.ac.in/suraj/mangolib",title:"Mangolib ",about:"Completely free pdf online library",imglink:""},
+        {link:"http://cloud.sistec.ac.in/suraj/mangolib",title:"Mangolib ",about:"Completely free pdf online library",imglink:"https://assets.justinmind.com/wp-content/uploads/2020/02/website-background-design-guide.png"},
+        {link:"http://cloud.sistec.ac.in/suraj/mangolib",title:"Mangolib ",about:"Completely free pdf online library",imglink:"https://assets.justinmind.com/wp-content/uploads/2020/02/website-background-design-guide.png"},
+        {link:"http://cloud.sistec.ac.in/suraj/mangolib",title:"Mangolib ",about:"Completely free pdf online library",imglink:"https://assets.justinmind.com/wp-content/uploads/2020/02/website-background-design-guide.png"},
         
       ]
     }
   }
   render() {
+    
+  document.title='Projects|| Albokotech';
     return (
 
       <div >
@@ -26,7 +28,8 @@ class Project extends React.Component{
           <div className="p-2 text-light float-left heading">Albokotech</div>
           <div className="">
           <div
-            style={{ "padding-top": "10rem" }}
+            style={{ paddingTop: "10rem",
+            paddingBottom: "10rem"  }}
             className="text-center"
           >
        
@@ -38,19 +41,19 @@ class Project extends React.Component{
           </div>
         </div>
 
-        <div className="p-3" style={{backgroundColor:"#f3f3f3"}}>
+        <div className="p-3 mt-5" style={{backgroundColor:"#f3f3f3"}}>
 
         <h1
         className="heading-lg text-center pt-3">Our Projects</h1>
         <div className="row">
-        <div className="col-lg-6 col-md-6 col-sm-12 p-2 text-center">
+        
           {
           this.state.data.map((pro,i)=>
               <Projectcard key={i}link={pro.link} title={pro.title} about={pro.about} imglink={pro.imglink}/>
           )}
         </div>
 
-        </div>
+       
         
 
 

@@ -11,7 +11,7 @@ export default function navbar() {
     <div className="float-right" >
     <ul id="nav" className="navbaar ">
         <a href="/"><li> Home</li></a>
-         <a href="/services"><li> Services</li></a>
+    
         <a href="/projects"><li> Projects</li></a>
         <a href="/contact"><li> Contact</li></a>
         <a href="/about"><li> About</li></a>        
@@ -28,7 +28,7 @@ export default function navbar() {
         <div id="sidebarMenu">
           <ul className="sidebarMenuInner">
         <a href="/"><li> Home</li></a>
-        <a href="/services"><li> Services</li></a>
+
         <a href="/projects"><li> Projects</li></a>
         <a href="/contact"><li> Contact</li></a>
         <a href="/about"><li> About</li></a>    
